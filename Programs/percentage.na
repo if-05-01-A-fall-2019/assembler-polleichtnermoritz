@@ -1,0 +1,42 @@
+"max Points:achieved points:"
+inc 12     # reserve space for local variables:
+          # 32: value entered by the user;
+          # 36: flag whether reading int was ok
+# print "max Points: "
+lit 0
+lit 11
+lit 12
+out 2
+
+# read input from stdin
+la 0 62
+la 0 66
+in 0
+sto
+
+#print "achieved points: "
+lit 11
+lit 27
+lit 28
+out 2
+
+#read input from stdin
+la 0 70
+la 0 74
+in 0
+sto
+
+la 0 78
+lv 0 70
+lit 100
+mul
+lv 0 62
+div
+sto
+out 3
+
+lv 0 78
+lit 3
+out 0
+out 3
+halt     
